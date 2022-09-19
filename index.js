@@ -9672,6 +9672,7 @@ try {
   const commits = core.getInput('commits')
   console.log("Commits start here")
   console.log("Commits", commits)
+  console.log("type", typeof commits)
   const nameToGreet = core.getInput('who-to-greet');
   console.log(`Hello ${nameToGreet}!`);
   const time = (new Date()).toTimeString();
