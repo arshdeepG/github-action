@@ -9669,6 +9669,8 @@ const github = __nccwpck_require__(5016);
 
 try {
   // `who-to-greet` input defined in action metadata file
+  const commits = core.getInput('commits')
+  console.log("Commits", commits)
   const nameToGreet = core.getInput('who-to-greet');
   console.log(`Hello ${nameToGreet}!`);
   const time = (new Date()).toTimeString();
